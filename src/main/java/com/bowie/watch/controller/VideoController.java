@@ -43,7 +43,6 @@ public class VideoController {
     public void init() {
         try {
             urls = FileUtil.loadUtf8(new ClassPathResource("static/url/url.txt").getFile(), bufferedReader -> bufferedReader.lines().collect(Collectors.toList()));
-            System.out.println(urls);
         } catch (IOException e) {
             e.printStackTrace();
         }
